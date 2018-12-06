@@ -27,11 +27,11 @@ btn.click(function () {
   if("100"==progress.substring(progress.lastIndexOf("『")+1,progress.lastIndexOf("』")-1)){  
      //播放完毕  
      $(".next_lesson a").click(); 
-     //1.5倍速播放
-     $(".speedTab15").click(); 
   }else{  
      $("#vjs_mediaplayer_html5_api")[0].play();  
-    $("#vjs_mediaplayer_html5_api")[0].muted=true;  
+    $("#vjs_mediaplayer_html5_api")[0].muted=true;
+    //1.5倍速播放
+     $(".speedTab15").click(); 
   }  
    $("#lfsenior").html("智慧树自动模式已开启,本章进度:"+progress+"%");  
 },100);  
